@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dom</title>
+</head>
+<body>
+    <p>This is real Dom</p>
+    <p id="countId">This is count</p>
+    <span id="valId">0</span>
+    <button onclick="incCounter()">MyButton</button>
+    <script>
+        function incCounter() {
+            const valEl=document.getElementById("valId");
+            const cEl = document.getElementById("countId");
+            console.log(valEl.innerText);
+            const val= parseInt(valEl.innerText)+1;
+            const el = document.createElement("span");
+            el.innerText=val;
+            console.log(val);
+            /* document.replaceChild(new, valEl) */
+            valEl.innerText=val;
+        }
+
+    </script>
+</body>
+</html>
