@@ -1,14 +1,11 @@
-import CallApi from './ApiTestingEx/CallApi';
-import Button from './Button/Button';
-import Counter from './VirtualDom/Counter';
-
+import NotificationViewer from "./JestFromPluralSight/Components/NotificationViewer";
+import TagList from "./JestFromPluralSight/4 SnapShotTesting/TagList";
 function App() {
-  return (  
+  return (
     <>
-    <Counter/>
-    <Button label="Test"/>
-    <CallApi></CallApi>
-    </>
+    <NotificationViewer/>
+    <TagList tags={['css','bootstrap']}/>
+    </>  
   );
 }
 
